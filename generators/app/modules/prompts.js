@@ -18,7 +18,7 @@ module.exports = function prompts() {
     type: 'input',
     name: 'bannerDesc',
     message: 'Describe the banner:',
-    default: 'Its Duncan Bannertime!'
+    default: 'Its Fetch Bannerlab!'
   }, {
     type: 'list',
     name: 'bannerType',
