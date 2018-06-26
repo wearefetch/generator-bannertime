@@ -1,54 +1,56 @@
 {
-	"name": "generator-fetch-mi-banners",
-	"version": "3.0.4",
-	"description": "Fetch Yeoman generator for creating HTML5 advertising campaigns based on pyramidium Bannertime generator ( all praises due )",
-	"homepage": "https://github.com/bannertime/generator-bannertime",
-	"bugs": "https://github.com/bannertime/generator-bannertime/issues",
-	"author": "Jay Campbell <jay@pyramidium.co.uk> (https://github.com/pyramidium)",
-	"contributors": [
-		"Joey Padasian <joeypadasian@oliver.agency> (https://github.com/joemidi)",
-		"Pavel Krymski <pavelkrymski@oliver.agency> (https://github.com/kp-dev)",
-		"Gamel James <gamel.james@wearefetch.com> (https://github.com/meezyart)"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/bannertime/generator-bannertime.git"
-	},
-	"license": "MIT",
-	"keywords": [
-		"yeoman-generator",
-		"html5",
-		"banner",
-		"ad",
-		"gulp",
-		"scaffold",
-		"framework"
-	],
-	"scripts": {
-		"deploy": "node ./publish.js",
-		"posttest": "./node_modules/eslint/bin/eslint.js generators/*/modules --ext .js",
-		"test": "./node_modules/mocha/bin/mocha"
-	},
-	"files": [
-		"generators"
-	],
-	"dependencies": {
-		"chalk": "^2.1.0",
-		"download": "^6.2.5",
-		"lodash": "^4.17.4",
-		"package-info": "^3.0.1",
-		"repeating": "^3.0.0",
-		"string-length": "^2.0.0",
-		"underscore.string": "^3.3.4",
-		"yeoman-generator": "^2.0.1"
-	},
-	"devDependencies": {
-		"eslint": "^4.8.0",
-		"eslint-config-airbnb-base": "^12.0.2",
-		"eslint-plugin-import": "^2.2.0",
-		"mocha": "^4.0.0",
-		"semver": "^5.4.1",
-		"yeoman-assert": "^3.1.0",
-		"yeoman-test": "^1.1.0"
-	}
+  "name": "generator-fetch-mi-banners",
+  "version": "3.0.5",
+  "description": "Fetch Yeoman generator for creating HTML5 advertising campaigns based on pyramidium Bannertime generator ( all praises due )",
+  "homepage": "https://github.com/wearefetch/generator-fetch-mi-banners",
+  "bugs": "https://github.com/wearefetch/generator-fetch-mi-banners/issues",
+  "author": "Gamel James <gamel.james@wearefetch.com> (https://github.com/meezyart)",
+  "contributors": [
+		"Jay Campbell <jay@pyramidium.co.uk> (https://github.com/pyramidium)",
+    "Joey Padasian <joeypadasian@oliver.agency> (https://github.com/joemidi)",
+		"Pavel Krymski <pavelkrymski@oliver.agency> (https://github.com/kp-dev)"
+
+
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearefetch/generator-fetch-mi-banners"
+  },
+  "license": "MIT",
+  "keywords": [
+    "yeoman-generator",
+    "html5",
+    "banner",
+    "ad",
+    "gulp",
+    "scaffold",
+    "framework"
+  ],
+  "scripts": {
+    "deploy": "node ./publish.js",
+    "posttest": "./node_modules/eslint/bin/eslint.js generators/*/modules --ext .js",
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "download": "^6.2.5",
+    "lodash": "^4.17.4",
+    "package-info": "^3.0.1",
+    "repeating": "^3.0.0",
+    "string-length": "^2.0.0",
+    "underscore.string": "^3.3.4",
+    "yeoman-generator": "^2.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^4.0.0",
+    "semver": "^5.4.1",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.1.0"
+  }
 }
