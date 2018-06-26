@@ -7,9 +7,13 @@
 
 ##### [Docs](https://bannertime.github.io/) - [Guidelines](https://bannertime.github.io/guides/contributing) - [License](https://bannertime.github.io/license)
 
+Fetch Yeoman generator for creating HTML5 advertising campaigns
+
 The goal of this project is to streamline banner builds and standardise workflow.
 
 The generator sets up the project scaffolding for you so that you can focus on the fun stuff.
+
+based on pyramidium Bannertime generator ( all praises due )
 
 
 # Quick Start
@@ -17,7 +21,7 @@ The generator sets up the project scaffolding for you so that you can focus on t
 ### Install Yeoman, Gulp and Bannertime
 
 ```bash
-$ npm i -g yo gulp generator-bannertime
+$ npm i -g yo gulp generator-fetch-mi-banners
 ```
 
 
@@ -31,7 +35,7 @@ $ mkdir my-campaign && cd $_
 ### Run Bannertime
 
 ```bash
-$ yo bannertime
+$ yo fetch-mi-banners
 ```
 
 
