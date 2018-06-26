@@ -6,12 +6,13 @@ module.exports = function install() {
   if (!this.options['skip-install']) {
     this.installDependencies({
       bower: false,
-      npm: true
+      yarn: true,
+      npm: false
     });
   }
 
   if (this.props.includeOfflineScripts === true) {
-    this.npmInstall(['gsap'], {
+    this.yarnInstall(['gsap'], {
       skipInstall: this.options['skip-install'],
       dev: true
     });
