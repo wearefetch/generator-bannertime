@@ -1,5 +1,22 @@
 'use strict';
 
+/**
+ * Scrubber class.
+ * @module Scrubber
+ */
+function Scrubber() {
+  var _this = this;
+
+  this._bindSelectors();
+  this._bindEvents();
+  this._resetScrubber();
+
+  setTimeout(function() {
+    _this.timeline = _this.iframe.contentWindow.banner.timeline;
+    _this._startTimeline();
+  }, 3000);
+}
+
 function Preview() {
   this.scrubberEl = document.querySelector('.scrubber');
   if (this.scrubberEl) this.scrubber = new Scrubber();
@@ -82,22 +99,7 @@ Preview.prototype._onClick = function(e) {
   }, 1000);
 };
 
-/**
- * Scrubber class.
- * @module Scrubber
- */
-function Scrubber() {
-  var _this = this;
 
-  this._bindSelectors();
-  this._bindEvents();
-  this._resetScrubber();
-
-  setTimeout(function() {
-    _this.timeline = _this.iframe.contentWindow.banner.timeline;
-    _this._startTimeline();
-  }, 3000);
-}
 
 Scrubber.prototype._bindSelectors = function() {
   this.iframe = document.querySelector('iframe');
