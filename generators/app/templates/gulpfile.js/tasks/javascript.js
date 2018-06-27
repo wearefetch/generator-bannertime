@@ -18,7 +18,7 @@ gulp.task('js', function() {
     .pipe(plumber({ errorHandler: handleErrors }))
     .pipe(gulpif(process.env.NODE_ENV == 'production', jshint()))
     .pipe(gulpif(process.env.NODE_ENV == 'production', jshint.reporter('default')))
-    .pipe(babel({presets: ['env']}))
+    .pipe(babel({presets: ['es2015']}))
     .pipe(removeCode({ production: process.env.NODE_ENV == 'production' }))
     .pipe(gulpif(process.env.NODE_ENV == 'production', uglify()))
     .pipe(gulp.dest(config.tasks.js.dest))
