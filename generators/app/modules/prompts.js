@@ -36,6 +36,24 @@ module.exports = function prompts() {
     name: 'includeOfflineScripts',
     message: 'Include vendor scripts for offline use?',
     default: false
+  }, {
+    when: response => response.bannerType === 'DoubleClick Studio',
+    type: 'confirm',
+    name: 'includeDynamicContent',
+    message: 'Create Dev Dynamic Content?',
+    default: true
+  }, {
+    when: response => response.bannerType === 'DoubleClick Studio',
+    type: 'input',
+    name: 'uniqueId',
+    message: 'Set Unique Id for this com?',
+    default: '1'
+  }, {
+    when: response => response.bannerType === 'DoubleClick Studio',
+    type: 'input',
+    name: 'profileId',
+    message: 'Set Profile Id?',
+    default: 'XXXXXXXX'
   }]).then((props) => {
     this.props = _.merge(this.props, props);
   });
