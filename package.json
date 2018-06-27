@@ -1,6 +1,6 @@
 {
   "name": "generator-fetch-mi-banners",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Fetch Yeoman generator for creating HTML5 advertising campaigns based on pyramidium Bannertime generator ( all praises due )",
   "homepage": "https://github.com/wearefetch/generator-fetch-mi-banners",
   "bugs": "https://github.com/wearefetch/generator-fetch-mi-banners/issues",
